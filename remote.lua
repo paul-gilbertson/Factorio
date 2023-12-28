@@ -1,5 +1,5 @@
 
-dragging = false;
+lefthold = false;
 shift = false;
 ctrl = false;
 
@@ -19,37 +19,9 @@ actions.up = function ()
 	update("up");
 end
 
-actions.tap = function ()
-	update("tap");
-	if (dragging) then
-		dragging = false;
-		mouse.dragend();
-		mouse.up();
-	else
-		mouse.click("left");
-	end
-end
-
 actions.double = function ()
 	update("double");
 	mouse.double("left");
-end
-
-actions.hold = function ()
-	update("hold");
-	mouse.down();
-	mouse.dragbegin();
-	dragging = true;
-end
-
-actions.minedown = function ()
-	keyboard.down("`");
-	mouse.down("left");
-end
-
-actions.mineup = function ()
-	keyboard.up("`");
-	mouse.up("left");
 end
 
 actions.tbup = function ()
@@ -65,7 +37,17 @@ actions.clickstart = function ()
 end
 
 actions.clickend = function ()
-	mouse.up("left");
+	if (not lefthold) then
+		mouse.up("left");
+		server.update({id = "leftclickbtn", color = "grey"});
+	end
+	lefthold = false;
+end
+
+actions.clickhold = function ()
+	mouse.down("left");
+	server.update({id = "leftclickbtn", color = "red"});
+	lefthold = true;
 end
 
 actions.rclickstart = function ()
