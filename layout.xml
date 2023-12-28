@@ -22,7 +22,7 @@
 	  <row weight="1">
 		<button icon="rwd" ontap="menu" color="black" />
 		<button image="Backpack.png" scale="fit" ontap="inventory" color="blue" />
-		<button image="Book.png" scale="fit" ontap="research" color="blue" />
+		<button image="Research.png" scale="fit" ontap="research" color="blue" />
 	  </row>
 
 	  <row weight="1">
