@@ -1,0 +1,8 @@
+# Required for legacy (V2) compatibility
+meta.id: Silverig.Factorio
+meta.hidden: false
+
+meta.name: Factorio
+meta.author: Silverig
+meta.description: Factorio remote
+meta.tags.category: gaming
