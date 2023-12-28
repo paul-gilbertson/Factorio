@@ -27,7 +27,7 @@
 
 	  <row weight="1">
         <button icon="zoomout" ontap="tbdown" color="purple" />
-		<button icon="ziomin" ontap="tbup" color="purple" />
+		<button icon="zoomin" ontap="tbup" color="purple" />
         <button icon="rotateright" ontap="rotate" />
 	  </row>
 	  <row weight="1">
