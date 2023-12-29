@@ -19,11 +19,6 @@ actions.up = function ()
 	update("up");
 end
 
-actions.double = function ()
-	update("double");
-	mouse.double("left");
-end
-
 actions.tbup = function ()
 	mouse.vscroll(-5);
 end
@@ -42,6 +37,11 @@ actions.clickend = function ()
 		server.update({id = "leftclickbtn", color = "grey"});
 	end
 	lefthold = false;
+end
+
+actions.tap = function ()
+	actions.clickstart();
+	actions.clickend();
 end
 
 actions.clickhold = function ()
@@ -127,7 +127,7 @@ actions.menu = function ()
 	keyboard.stroke("escape");
 end
 
-actions.reseach = function ()
+actions.research = function ()
 	keyboard.stroke("t");
 end
 

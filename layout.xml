@@ -3,8 +3,7 @@
 <grid>
     <row weight="6">
 		<touch id="touch"
-			ondown="down"
-			onup="up"
+			ontap="tap" 
 			ontouchdelta="delta"
 			color="transparent"
 			text="Touch!" />
