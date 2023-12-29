@@ -22,7 +22,7 @@
 	  </row>
 
 	  <row weight="1">
-        <button icon="zoomout" ontap="tbdown" color="purple" />
+        <button image="EmptyHand.png" scale="fit" ontap="emptyhand" color="black" />
 		<button icon="zoomin" ontap="tbup" color="purple" />
 		<button text="M" ondown="mclickstart" onup="mclickend" />
 		<button icon="rwd" ontap="menu" color="black" />

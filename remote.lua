@@ -131,6 +131,10 @@ actions.research = function ()
 	keyboard.stroke("t");
 end
 
+actions.emptyhand = function ()
+	keyboard.stroke("q");
+end
+
 actions.shifttoggle = function ()
 	if (shift) then
 		shift = false;
